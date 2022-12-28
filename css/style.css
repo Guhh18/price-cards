@@ -1,5 +1,5 @@
 /*
-Amarelo - B99E45 
+Amarelo - ecd177
 Roxo - 744FB8 
 Verde - 2FAE67
 */
@@ -12,9 +12,8 @@ body{
     align-items: center;
 }
 
-section{
-    
-}
+
+
 
 .section-cards{
     display: flex;
@@ -26,7 +25,124 @@ section{
 
 .card{
     width: 250px;
-    height: 400px;
-    background-color: #B99E45;
+    height: 350px;
+    background-color: #fff;
     margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.price{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid #ecd177;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.content{
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    background-color: #ecd177;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.content h2{
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-right: 3px;
+}
+
+
+
+
+
+.title-and-vantages{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.line{
+    width: 50px;
+    height: 1px;
+    background-color: #ecd177;
+}
+
+
+
+
+
+.vantages{
+    display: flex;
+    flex-direction: column;
+}
+
+.vantage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+
+.vantage h3{
+    font-size: 12px;
+    margin: 0;
+}
+
+.vantage img{
+    width: 15px;
+    height: 15px;
+}
+
+/*
+.vantage img[src*="close"]{
+    width: 15px;
+    height: 15px;
+} */
+
+
+
+.button{
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ecd177;
+    margin-top: 10px;
+}
+
+.button h1{
+    font-size: 15px;
+}
+
+.button:hover{
+    background-color: #ecd177;
+    transition: all .5s;
 }
