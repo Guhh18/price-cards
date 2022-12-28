@@ -1,4 +1,32 @@
 /*
-b89e48 - amarelo
-754fb3 - roxo
+Amarelo - B99E45 
+Roxo - 744FB8 
+Verde - 2FAE67
 */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    
+}
+
+.section-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000ff;
+    width: 850px;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    background-color: #B99E45;
+    margin: 20px;
+}
