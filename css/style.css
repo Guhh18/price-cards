@@ -25,7 +25,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0000ff;
     width: 850px;
 }
 
@@ -37,6 +36,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, .3);
+
 }
 
 
@@ -69,6 +71,55 @@ body{
 }
 
 
+
+
+.tarja-box{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tarja-box::before{
+    content: 'Recommend';
+    position: absolute;
+    width: 150%;
+    height: 30px;
+    background-color: #744FB8;
+    transform: rotate(-45deg) translateY(-15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+}
+
+.tarja-box::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #744FB8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(50%);
+    box-shadow: 75px -75px #744FB8;
+}
+
+
+
+
+
+.card-2{
+    position: relative;
+}
 
 .card-2 .price {
     width: 100px;
@@ -137,6 +188,7 @@ body{
 .title{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 15px;
 }
 
@@ -229,12 +281,15 @@ h1{
 
 .button-1:hover{
     background-color: #ecd177;
+    color: #fff;
 }
 
 .button-2:hover {
     background-color: #744FB8;
+    color: #fff;
 }
 
 .button-3:hover {
     background-color: #2FAE67;
+    color: #fff;
 }
