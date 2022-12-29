@@ -3,6 +3,12 @@ Amarelo - ecd177
 Roxo - 744FB8 
 Verde - 2FAE67
 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body{
     width: 100vw;
@@ -39,7 +45,7 @@ body{
 
 
 
-.price{
+.card-1 .price{
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -51,7 +57,7 @@ body{
     margin-top: 15px;
 }
 
-.content{
+.card-1 .content{
     width: 96px;
     height: 96px;
     border-radius: 48px;
@@ -62,10 +68,60 @@ body{
     font-size: 30px;
 }
 
-.content h2{
+
+
+.card-2 .price {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid #744FB8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.card-2 .content {
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    background-color: #744FB8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.card-3 .price {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid #2FAE67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.card-3 .content {
+    width: 96px;
+    height: 96px;
+    border-radius: 48px;
+    background-color: #2FAE67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.card-1 .content h2, 
+.card-2 .content h2, 
+.card-3 .content h2{
     font-size: 20px;
-    margin-bottom: 25px;
-    margin-right: 3px;
+    margin-bottom: 15px;
+    margin-right: 2px;
 }
 
 
@@ -75,11 +131,13 @@ body{
 .title-and-vantages{
     display: flex;
     flex-direction: column;
+    width: 210px;
 }
 
 .title{
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 h1{
@@ -87,12 +145,23 @@ h1{
     padding-right: 15px;
 }
 
-.line{
+.card-1 .line{
     width: 50px;
     height: 1px;
     background-color: #ecd177;
 }
 
+.card-2 .line {
+    width: 50px;
+    height: 1px;
+    background-color: #744FB8;
+}
+
+.card-3 .line {
+    width: 50px;
+    height: 1px;
+    background-color: #2FAE67;
+}
 
 
 
@@ -100,13 +169,14 @@ h1{
 .vantages{
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
 }
 
 .vantage{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4px;
+    padding: 5px;
 }
 
 .vantage h3{
@@ -134,15 +204,37 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ecd177;
     margin-top: 10px;
+    cursor: pointer;
+    transition: all .5s;
+    margin-top: 20px;
 }
+
+.button-1{
+    border: 2px solid #ecd177;
+}
+
+.button-2 {
+    border: 2px solid #744FB8;
+}
+
+.button-3 {
+    border: 2px solid #2FAE67;
+}
+
 
 .button h1{
     font-size: 15px;
 }
 
-.button:hover{
+.button-1:hover{
     background-color: #ecd177;
-    transition: all .5s;
+}
+
+.button-2:hover {
+    background-color: #744FB8;
+}
+
+.button-3:hover {
+    background-color: #2FAE67;
 }
