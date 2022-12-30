@@ -28,6 +28,8 @@ body{
     width: 850px;
 }
 
+
+/* CARDS */
 .card{
     width: 250px;
     height: 350px;
@@ -40,10 +42,6 @@ body{
     box-shadow: 0px 25px 50px rgba(0, 0, 0, .3);
 
 }
-
-
-
-
 
 
 
@@ -72,6 +70,8 @@ body{
 
 
 
+
+/* TARJA */
 
 .tarja-box{
     width: 80px;
@@ -113,6 +113,7 @@ body{
     box-shadow: 75px -75px #744FB8;
 }
 
+/* </TARJA> */
 
 
 
@@ -144,6 +145,8 @@ body{
     font-size: 30px;
 }
 
+
+
 .card-3 .price {
     width: 100px;
     height: 100px;
@@ -167,6 +170,7 @@ body{
     font-size: 30px;
 }
 
+
 .card-1 .content h2, 
 .card-2 .content h2, 
 .card-3 .content h2{
@@ -175,9 +179,10 @@ body{
     margin-right: 2px;
 }
 
+/* </CARDS> */
 
 
-
+/* TITLE */
 
 .title-and-vantages{
     display: flex;
@@ -215,8 +220,11 @@ h1{
     background-color: #2FAE67;
 }
 
+/* </TITLE> */
 
 
+
+/* VANTAGES */
 
 .vantages{
     display: flex;
@@ -241,13 +249,10 @@ h1{
     height: 15px;
 }
 
-/*
-.vantage img[src*="close"]{
-    width: 15px;
-    height: 15px;
-} */
+/* </VANTAGES> */
 
 
+/* BUTTONS */
 
 .button{
     width: 170px;
@@ -260,6 +265,17 @@ h1{
     cursor: pointer;
     transition: all .5s;
     margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button h1 {
+    font-size: 15px;
+    z-index: 1;
 }
 
 .button-1{
@@ -275,21 +291,46 @@ h1{
 }
 
 
-.button h1{
-    font-size: 15px;
-}
-
-.button-1:hover{
+.button-1::after{
+    content: "";
+    width: 0%;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
     background-color: #ecd177;
-    color: #fff;
+    bottom: -1;
+    left: 0;
+    transition: all .5s ease-in-out;
 }
 
-.button-2:hover {
+.button-2::after {
+    content: "";
+    width: 0%;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
     background-color: #744FB8;
-    color: #fff;
+    bottom: -1;
+    left: 0;
+    transition: all .5s ease-in-out;
 }
 
-.button-3:hover {
+.button-3::after {
+    content: "";
+    width: 0%;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
     background-color: #2FAE67;
-    color: #fff;
+    bottom: -1;
+    left: 0;
+    transition: all .5s ease-in-out;
 }
+
+.button-1:hover::after,
+.button-2:hover::after,
+.button-3:hover::after{
+    width: 100%;
+}
+
+/* </BUTTONS> */
